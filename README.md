@@ -1,6 +1,6 @@
 # first_app
 
-A new Flutter project.
+A new Flutter project. Just a simple personality quiz app :)
 
 ## Getting Started
 

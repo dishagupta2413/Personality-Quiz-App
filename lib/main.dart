@@ -5,11 +5,24 @@ void main(){
 }
 
 //We can only extend one class at a time
-class MyApp extends StatelessWidget{
+class MyApp extends StatefulWidget{
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return MyAppState();
+  }
+
+}
+
+class MyAppState extends State<MyApp>{
   var questionIndex =0;
 
   void answerQuestion() {
-    questionIndex = questionIndex +1;
+    //setState is function which take an anonymous function as an argument
+    setState(() {
+      questionIndex = questionIndex +1;
+    });
     print('Answer chosen !');
     print(questionIndex);
   }
